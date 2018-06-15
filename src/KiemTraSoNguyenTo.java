@@ -9,7 +9,7 @@ public class KiemTraSoNguyenTo {
             if (number <= 0) {
                 System.out.println(number + " Không phải là số nguyên tố.");
             } else {
-                int bien_tang = 1;
+                int bien_tang = 0;
                 for (int i = number - 1; i > 1; i--) {
 
                     if (number % i == 0) {
@@ -18,7 +18,8 @@ public class KiemTraSoNguyenTo {
                         bien_tang = bien_tang;
                     }
                 }
-                if (bien_tang != 1) {
+                if (bien_tang != 0) {
+                    System.out.println(number + " Chia hết cho " + bien_tang + " số ngoài 1 và chính nó.");
                     System.out.println(number + " Không phải là số nguyên tố.");
                 } else {
                     System.out.println(number + " Là số nguyên tố.");
